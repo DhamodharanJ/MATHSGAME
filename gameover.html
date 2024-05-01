@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths</title>
+    <!-- <link rel="stylesheet" href="math.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+        text-align: center;
+        margin: 10rem auto;
+    }
+    button{
+        margin-top:3rem ;
+        height: 3rem;
+        width: 7rem;
+        font-size: large;
+        border: none;
+        background-color: red;
+        border-radius: 3rem;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h1>GAME OVER</h1>
+        <div class="scor"></div>
+        <button onclick="goback()">Go back</button>
+    </div>
+    <script>
+        function goback(){
+            window.location.href="math.html";
+        }
+      let a=localStorage.getItem('score');
+      console.log(a);
+ </script>
+</body>
+</html>
